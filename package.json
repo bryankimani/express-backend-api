@@ -2,7 +2,12 @@
 	"name": "fcc-learn-node-with-express",
 	"author": "Bryan Kimani",
 	"description": "backend API based on express framework",
-	"keywords": ["Node", "Express", "freecodecamp", "javascript"],
+	"keywords": [
+		"Node",
+		"Express",
+		"freecodecamp",
+		"javascript"
+	],
 	"license": "MIT",
 	"version": "0.1.0",
 	"dependencies": {
