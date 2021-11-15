@@ -1,5 +1,6 @@
 {
-	"name": "fcc-learn-npm-package-json",
+	"name": "node-backend-api",
+	"author": "Bryan Kimani",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
@@ -9,6 +10,6 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://idontknow/todo.git"
+		"url": "https://github.com/bryankimani/node-backend-api.git"
 	}
 }
