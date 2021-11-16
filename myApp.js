@@ -2,6 +2,8 @@ var express = require('express');
 var app = express();
 require('dotenv').config();
 
+var bodyParser = require('body-parser');
+
 console.log(__dirname + '/views/index.html');
 
 app.use('/public', express.static(__dirname + '/public'));
@@ -10,6 +12,14 @@ app.use(function(req, res,next) {
   console.log(req.method + " " + req.path  + " - " + req.ip);
   next();
 });
+
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+ 
+// parse application/json
+app.use(bodyParser.json())
+
 
 app.get('/', function(req, res) {
   console.log(req.method);
