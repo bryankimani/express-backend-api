@@ -46,7 +46,12 @@ app.get('/:word/echo', function(req, res) {
   res.send({echo: req.params.word})
 });
 
-
+app.get('/name', function(req, res, next) {
+  console.log(req.query);
+  next();
+},function(req, res) {
+  res.send({ name: req.query.first + " " + req.query.last })
+});
 
 
 
